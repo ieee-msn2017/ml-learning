@@ -50,4 +50,7 @@ A = gradAscent(dataArr, labelMat)  # 回归系数a的值
 # 测试
 dataArr, labelMat = loadDataSet(testing_sample)
 h = sigmoid(np.mat(dataArr)*A)  # 预测结果h(a)的值
+print 'real: '
+print labelMat
+print 'predict: '
 print predict(h)
